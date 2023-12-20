@@ -8,33 +8,37 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Lucas Santana Santos </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Olá a todos, eu sou <span className="purple">Lucas Santana Santos </span>
+            de <span className="purple"> São Paulo, Brasil.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Atualmente sou estudante da UFABC no curso de Ciência da Computação e estou procurando por um emprego.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Me interesso por computação desde pequeno, e a cada dia que passa crio novos objetivos pessoais para alcançar a liberdade que almejo na criação de soluções digitais.
+            <br />
+            <br />
+            Graças à essa motivação, consegui aprender bastante sobre programação nos últimos anos e inclusive consegui publicar um App na Play Store! Esse é só o começo...
+            <br />
+            <br />
+            Existem outras coisas que também gosto de fazer
           </p>
+          
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Jogar com amigos
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Viajar
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Escutar músicas, sempre estou escutando músicas 😅
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(0, 255, 255)" }}>
+            "O único modo de fazer um ótimo trabalho é amar o que você faz."{" "}
           </p>
-          <footer className="blockquote-footer">Lucas Santana Santos</footer>
+          <footer className="purple">- Steve Jobs</footer>
         </blockquote>
       </Card.Body>
     </Card>
