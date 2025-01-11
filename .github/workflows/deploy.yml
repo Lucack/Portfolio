@@ -15,10 +15,10 @@ jobs:
     - name: Install Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.27.1' 
+        flutter-version: '3.27.1'
 
     - name: Build Flutter Web
-      run: flutter build web
+      run: flutter build web --base-href="/Portfolio/"
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
