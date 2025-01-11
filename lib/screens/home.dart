@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
       appBar: CustomAppBar("", context),
       body: ListView(
         children: [
+
           if (isMobile)
             SizedBox(
               height: MediaQuery.of(context).size.height * .2,
@@ -53,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                 ),
           const SizedBox(height: 48),
           Padding(
-            padding:  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .1),
+            padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .1),
             child: buildInfoSection(),
           ),
           const SizedBox(height: 48),
@@ -63,7 +64,7 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.contain, // Ajusta a escala do SVG
           ),
           Padding(
-            padding:  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .1),
+            padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .1),
             child: buildContactSection(),
           ),
         ],

@@ -15,7 +15,6 @@ class PortfolioApp extends StatelessWidget {
     isMobile = MediaQuery.of(context).size.width < 1024;
 
     return MaterialApp(
-
       title: 'Lucas Santana Santos',
       theme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,

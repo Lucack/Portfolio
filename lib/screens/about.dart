@@ -194,7 +194,6 @@ class AboutSection extends StatelessWidget {
 
   Widget _buildGitHubContributions() {
     return Column(
-
       children: [
         const Text(
           'Days I Code',

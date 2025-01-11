@@ -29,7 +29,7 @@ AppBar CustomAppBar(String title, BuildContext context) {
                             const DrawerHeader(
                               child: Center(
                                 child: Text(
-                                  'Navigation',
+                                  '',
                                   style: TextStyle(fontSize: 24),
                                 ),
                               ),
