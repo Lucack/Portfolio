@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import '../components/CustomAppBar.dart';
 import '../components/about/AboutMe.dart';
 import '../globals.dart';
 import '../icons/icons.dart';
-import '../modules/textWithHilight.dart';
 
 class AboutSection extends StatelessWidget {
   const AboutSection({super.key});
@@ -35,8 +33,8 @@ class AboutSection extends StatelessWidget {
                         child: AboutMe(),
                       ),
                       Center(
-                        child: SvgPicture.asset(
-                          "assets/images/homeImageDev.svg",
+                        child: SvgPicture.string(
+                          ImageDev,
                           height: MediaQuery.of(context).size.height * .5,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),
@@ -52,8 +50,8 @@ class AboutSection extends StatelessWidget {
                         child: AboutMe(),
                       ),
                       Center(
-                        child: SvgPicture.asset(
-                          "assets/images/homeImageDev.svg",
+                        child: SvgPicture.string(
+                          ImageDev,
                           height: MediaQuery.of(context).size.height * .6,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),

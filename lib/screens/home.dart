@@ -5,6 +5,7 @@ import '../components/home/Contact.dart';
 import '../components/home/IntroTextAnimated.dart';
 import '../components/home/MoreAbout.dart';
 import '../globals.dart';
+import '../icons/icons.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -27,8 +28,8 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     IntroTextAnimated(),
                     Center(
-                      child: SvgPicture.asset(
-                        "assets/images/homeImageDev.svg",
+                      child: SvgPicture.string(
+                        ImageDev,
                         height: 400,
                         fit: BoxFit.contain, // Ajusta a escala do SVG
                       ),
@@ -43,8 +44,8 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       IntroTextAnimated(),
                       Center(
-                        child: SvgPicture.asset(
-                          "assets/images/homeImageDev.svg",
+                        child: SvgPicture.string(
+                          ImageDev,
                           height: MediaQuery.of(context).size.height * .6,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),
@@ -59,7 +60,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const SizedBox(height: 48),
           SvgPicture.asset(
-            "assets/images/avatar.svg",
+            ImageAvatar,
             width: MediaQuery.of(context).size.height * .3,
             fit: BoxFit.contain, // Ajusta a escala do SVG
           ),
