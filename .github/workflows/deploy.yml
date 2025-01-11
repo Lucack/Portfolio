@@ -10,17 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3  # Usando v3 ao invés de v2, pois v3 tem melhorias
-
-    - name: Install Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.27.1'  # Certifique-se de especificar a versão do Flutter que você está utilizando
-
-    - name: Build Flutter Web with CanvasKit
-      run: flutter build web --web-renderer canvaskit  --dart-define=FLUTTER_WEB_USE_SKIA=true  --base-href=/Portfolio/
-
-    - name: Deploy to GitHub Pages
-      uses: bluefireteam/flutter-gh-pages@v7
-      with:
-        baseHref: /Portfolio/
+      - uses: actions/checkout@v2 # Only works with v2
+      - uses: subosito/flutter-action@v1
+      - uses: bluefireteam/flutter-gh-pages@v7
+        with:
+          baseHref: /Portfolio/
