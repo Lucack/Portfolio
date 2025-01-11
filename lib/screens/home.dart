@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
             child: buildInfoSection(),
           ),
           const SizedBox(height: 48),
-          SvgPicture.asset(
+          SvgPicture.string(
             ImageAvatar,
             width: MediaQuery.of(context).size.height * .3,
             fit: BoxFit.contain, // Ajusta a escala do SVG
