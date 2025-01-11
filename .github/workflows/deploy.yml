@@ -18,7 +18,7 @@ jobs:
         flutter-version: '3.27.1'  # Certifique-se de especificar a versão do Flutter que você está utilizando
 
     - name: Build Flutter Web with CanvasKit
-      run: flutter build web --web-renderer canvaskit --base-href=/Portfolio/
+      run: flutter build web --web-renderer canvaskit  --dart-define=FLUTTER_WEB_USE_SKIA=true  --base-href=/Portfolio/
 
     - name: Deploy to GitHub Pages
       uses: bluefireteam/flutter-gh-pages@v7
