@@ -1,11 +1,11 @@
 {
-    "name": "portfolio",
-    "short_name": "portfolio",
+    "name": "Lucas Santana",
+    "short_name": "Portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Esse é meu porfolio ^^",
+    "description": "Olá, eu sou o Lucas Santana e esse é meu porfolio! ^^",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
