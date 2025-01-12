@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/screens/about.dart';
-import 'package:portfolio/screens/home.dart';
-import 'package:portfolio/screens/projects.dart';
-import 'package:portfolio/screens/resume.dart';
+import 'package:Portfolio/screens/about.dart';
+import 'package:Portfolio/screens/home.dart';
+import 'package:Portfolio/screens/projects.dart';
+import 'package:Portfolio/screens/resume.dart';
 
 import '../globals.dart';
 

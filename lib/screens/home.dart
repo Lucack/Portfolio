@@ -26,10 +26,13 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    IntroTextAnimated(),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height * .06),
+                      child: IntroTextAnimated(),
+                    ),
                     Center(
-                      child: SvgPicture.string(
-                        ImageDev,
+                      child: Image.asset(
+                        "assets/images/homeImageDev-1000.png",
                         height: 400,
                         fit: BoxFit.contain, // Ajusta a escala do SVG
                       ),
@@ -44,8 +47,8 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       IntroTextAnimated(),
                       Center(
-                        child: SvgPicture.string(
-                          ImageDev,
+                        child: Image.asset(
+                          "assets/images/homeImageDev-1000.png",
                           height: MediaQuery.of(context).size.height * .6,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),
@@ -59,9 +62,9 @@ class HomeScreen extends StatelessWidget {
             child: buildInfoSection(),
           ),
           const SizedBox(height: 48),
-          SvgPicture.string(
-            ImageAvatar,
-            width: MediaQuery.of(context).size.height * .3,
+          Image.asset(
+            "assets/images/avatar-512.png",
+            height: MediaQuery.of(context).size.height * .3,
             fit: BoxFit.contain, // Ajusta a escala do SVG
           ),
           Padding(

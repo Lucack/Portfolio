@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/CustomAppBar.dart';
-import 'package:portfolio/globals.dart';
+import 'package:Portfolio/components/CustomAppBar.dart';
+import 'package:Portfolio/globals.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:io';

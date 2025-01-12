@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/globals.dart';
+import 'package:Portfolio/globals.dart';
 
 class IntroTextAnimated extends StatefulWidget {
   const IntroTextAnimated({super.key});

@@ -35,33 +35,36 @@ class AboutSection extends StatelessWidget {
                       Center(
                         child: SvgPicture.string(
                           ImageDev,
-                          height: MediaQuery.of(context).size.height * .5,
+                          width: MediaQuery.of(context).size.width * .7,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),
                       ),
+                      SizedBox(height: MediaQuery.of(context).size.height * .1)
                     ],
                   )
                 : Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Spacer(),
                       ConstrainedBox(
                         constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * .3),
                         child: AboutMe(),
                       ),
+                      Spacer(),
                       Center(
                         child: SvgPicture.string(
                           ImageDev,
-                          height: MediaQuery.of(context).size.height * .6,
+                          height: MediaQuery.of(context).size.height * .4,
                           fit: BoxFit.contain, // Ajusta a escala do SVG
                         ),
                       ),
+                      Spacer(),
                     ],
                   ),
           ),
-
           Padding(
-            padding:  EdgeInsets.symmetric(horizontal: isMobile? MediaQuery.of(context).size.width * .1: 0),
+            padding: EdgeInsets.symmetric(horizontal: isMobile ? MediaQuery.of(context).size.width * .1 : 0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -70,16 +73,32 @@ class AboutSection extends StatelessWidget {
                   'Existem outras coisas que também gosto de fazer',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const SizedBox(height: 16),
-                _buildHobbyList(),
+                SizedBox(height: MediaQuery.of(context).size.height * .05),
+                _buildHobbyList(18),
+                SizedBox(height: MediaQuery.of(context).size.height * .05),
+                Center(
+                  child: isMobile
+                      ? SvgPicture.string(
+                          devMusic,
+                          width: MediaQuery.of(context).size.width * .6,
+                          fit: BoxFit.contain, // Ajusta a escala do SVG
+                        )
+                      : SvgPicture.string(
+                          devMusic,
+                          width: MediaQuery.of(context).size.width * .25,
+                          fit: BoxFit.contain, // Ajusta a escala do SVG
+                        ),
+                ),
+                SizedBox(height: MediaQuery.of(context).size.height * .05),
                 const SizedBox(height: 32),
                 _buildQuote(),
                 const SizedBox(height: 48),
                 _buildSkillsSection(),
                 const SizedBox(height: 48),
                 _buildToolsSection(),
-                const SizedBox(height: 48),
-                _buildGitHubContributions(),
+                SizedBox(height: MediaQuery.of(context).size.height * .2),
+                // const SizedBox(height: 48),
+                // _buildGitHubContributions(),
               ],
             ),
           )
@@ -88,13 +107,22 @@ class AboutSection extends StatelessWidget {
     );
   }
 
-  Widget _buildHobbyList() {
+  Widget _buildHobbyList(fontSize) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
-        Text('• Jogar com amigos'),
-        Text('• Viajar'),
-        Text('• Escutar músicas, sempre estou escutando músicas 😅'),
+      children: [
+        Text(
+          '• Jogar com amigos',
+          style: TextStyle(fontSize: fontSize),
+        ),
+        Text(
+          '• Viajar',
+          style: TextStyle(fontSize: fontSize),
+        ),
+        Text(
+          '• Escutar músicas, sempre estou escutando músicas 😅',
+          style: TextStyle(fontSize: fontSize),
+        ),
       ],
     );
   }
@@ -159,7 +187,7 @@ class AboutSection extends StatelessWidget {
           runSpacing: 16,
           children: [
             _buildSkillCard('VS Code', vscode),
-            _buildSkillCard('Android Studio', androidStudio),
+            _buildSkillCard('Android\n Studio', androidStudio),
             _buildSkillCard('GitHub', github),
             _buildSkillCard('Figma', dart),
           ],
@@ -200,7 +228,6 @@ class AboutSection extends StatelessWidget {
         const SizedBox(height: 24),
         SvgPicture.network(
           'https://ghchart.rshah.org/Lucack',
-          width: double.infinity,
           height: 100,
           fit: BoxFit.contain,
         ),
