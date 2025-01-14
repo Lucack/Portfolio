@@ -27,7 +27,7 @@ class AboutMe extends StatelessWidget {
         const SizedBox(height: 16),
         Flexible(
           child: const Text(
-            'Atualmente sou estudante da UFABC no curso de Ciência da Computação e estou procurando por um emprego.',
+            'Atualmente sou estudante da UFABC no curso de Ciência da Computação.',
             style: TextStyle(fontSize: 18),
             overflow: TextOverflow.visible,
           ),

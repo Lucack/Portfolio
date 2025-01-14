@@ -63,8 +63,16 @@ class ProjectsSection extends StatelessWidget {
   List<Widget> _buildProjectCards({bool isDesktop = false}) {
     final projects = [
       {
+        'title': 'UFABConecta',
+        'category': 'App',
+        'description': 'Meu primeiro aplicativo oficial publicado. UFABConecta foi criado para reunir diversos serviços da UFABC (Universidade Federal do ABC) e ajudar a vida dos estudantes..',
+        'imagePath': 'assets/images/mobile.png',
+        'backgroundColor': Color(0xFF4CA89A),
+        'links': [Link('Play Store', 'https://play.google.com/store/apps/details?id=com.lucack.ufabconecta&hl=pt_BR', playStore)],
+      },
+      {
         'title': 'Cris\' Adventures',
-        'category': 'Games',
+        'category': 'Game',
         'description': 'Um jogo educativo desenvolvido em poucos dias com a ajuda de amigos.',
         'imagePath': 'assets/images/cris.png',
         'backgroundColor': Color(0xFF151C22),
@@ -75,7 +83,7 @@ class ProjectsSection extends StatelessWidget {
       },
       {
         'title': 'Pong Game',
-        'category': 'Games',
+        'category': 'Game',
         'description': 'Meu segundo jogo desenvolvido em Python utilizando Kivy.',
         'imagePath': 'assets/images/ponggame.png',
         'backgroundColor': Colors.grey.shade900,
@@ -83,7 +91,7 @@ class ProjectsSection extends StatelessWidget {
       },
       {
         'title': 'Bounce Game',
-        'category': 'Games',
+        'category': 'Game',
         'description': 'Meu primeiro jogo desenvolvido do zero em Python.',
         'imagePath': 'assets/images/bouncegame.png',
         'backgroundColor': Colors.grey.shade800,
@@ -207,7 +215,7 @@ class ProjectsSection extends StatelessWidget {
       aspectRatio: 16 / 9,
       child: Image.asset(
         imagePath,
-        fit: BoxFit.cover,
+        fit: BoxFit.contain,
       ),
     );
   }
