@@ -5,10 +5,10 @@ packages:
     dependency: "direct main"
     description:
       name: animated_text_kit
-      sha256: "37392a5376c9a1a503b02463c38bc0342ef814ddbb8f9977bc90f2a84b22fa92"
+      sha256: adba517adb7e6adeb1eb5e1c8a147dd7bc664dfdf2f5e92226b572a91393a93d
       url: "https://pub.dev"
     source: hosted
-    version: "4.2.2"
+    version: "4.2.3"
   args:
     dependency: transitive
     description:
@@ -85,10 +85,10 @@ packages:
     dependency: transitive
     description:
       name: device_info_plus
-      sha256: "4fa68e53e26ab17b70ca39f072c285562cfc1589df5bb1e9295db90f6645f431"
+      sha256: "72d146c6d7098689ff5c5f66bcf593ac11efc530095385356e131070333e64da"
       url: "https://pub.dev"
     source: hosted
-    version: "11.2.0"
+    version: "11.3.0"
   device_info_plus_platform_interface:
     dependency: transitive
     description:
@@ -172,10 +172,10 @@ packages:
     dependency: transitive
     description:
       name: http
-      sha256: b9c29a161230ee03d3ccf545097fccd9b87a5264228c5d348202e0f0c28f9010
+      sha256: fe7ab022b76f3034adc518fb6ea04a82387620e19977665ea18d30a1cf43442f
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.2"
+    version: "1.3.0"
   http_parser:
     dependency: transitive
     description:
@@ -329,66 +329,66 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
-      sha256: "12735505d616320aebe39a6fc90b6608a09116378d66aee9636b0eddf7b75971"
+      sha256: dafeebdf8673d6dd874191bf579bc17c76b4b84e09fc0e4ae5bc7e56c0c91f4b
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_flutter_pdf:
     dependency: transitive
     description:
       name: syncfusion_flutter_pdf
-      sha256: "241443d3407d011b2ec991c374974ec77ea5c6730aac0ee7f84811c84bf59c21"
+      sha256: "50d8144ddc7b58b3450b4410bc8f7c456dc89d494c2270a3e294fb7ac9d7fb58"
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_flutter_pdfviewer:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_pdfviewer
-      sha256: a6badf62251a1e542c5dcd2a825178bf99911034ae33aef0bf5376f079cec1fb
+      sha256: "171024482a426a80598fe8d46991c7a8b88dd52570057619717262e4b8439c1c"
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_flutter_signaturepad:
     dependency: transitive
     description:
       name: syncfusion_flutter_signaturepad
-      sha256: "3576f2520bd0e417c8b90e6a6306bc6a35c802f5233b67c32d10017e3ebbcae3"
+      sha256: "193e83e1c28207f2af20b1722e127997b135da00fffffd1bef3e8e65a25ed47e"
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_pdfviewer_macos:
     dependency: transitive
     description:
       name: syncfusion_pdfviewer_macos
-      sha256: "087b025f02a03fe83d8cac5acb8618a80c5f460a37f8a9ec7c3b577947278b5a"
+      sha256: "0ade61a351b3013b992d352b408e9555bc7a54a6ded8a5117215f1376041eedc"
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_pdfviewer_platform_interface:
     dependency: transitive
     description:
       name: syncfusion_pdfviewer_platform_interface
-      sha256: "7b70fa321ec9a08368746354ee23c39cf8802a2b81fbcac029351c1ca9b86c55"
+      sha256: de14eb1221036394da09885ffe6cd3cafaaeabecfe29c692735cd881cbd3c43a
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_pdfviewer_web:
     dependency: transitive
     description:
       name: syncfusion_pdfviewer_web
-      sha256: d2b4efe956670ee8b80cf410c7566f2e15acbf7d32d013b84d70199d39695bec
+      sha256: db54fb6da8b9a6f2c6df716ed490665396c7ce81a1e145458f409356c6b401be
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   syncfusion_pdfviewer_windows:
     dependency: transitive
     description:
       name: syncfusion_pdfviewer_windows
-      sha256: "9c282308d0c8eb1b0827782b0ed9c8ac271680d2e1749a1fe16999f4388afaf9"
+      sha256: "4ebd2ff8f250737f97fa60f2033f2b03368662c7d9f3dbe561b3c0c1df86cc3d"
       url: "https://pub.dev"
     source: hosted
-    version: "28.1.38"
+    version: "28.2.5"
   term_glyph:
     dependency: transitive
     description:
@@ -489,10 +489,10 @@ packages:
     dependency: transitive
     description:
       name: vector_graphics
-      sha256: "27d5fefe86fb9aace4a9f8375b56b3c292b64d8c04510df230f849850d912cb7"
+      sha256: "44cc7104ff32563122a929e4620cf3efd584194eec6d1d913eb5ba593dbcf6de"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.15"
+    version: "1.1.18"
   vector_graphics_codec:
     dependency: transitive
     description:
@@ -537,10 +537,10 @@ packages:
     dependency: transitive
     description:
       name: win32
-      sha256: "154360849a56b7b67331c21f09a386562d88903f90a1099c5987afc1912e1f29"
+      sha256: daf97c9d80197ed7b619040e86c8ab9a9dad285e7671ee7390f9180cc828a51e
       url: "https://pub.dev"
     source: hosted
-    version: "5.10.0"
+    version: "5.10.1"
   win32_registry:
     dependency: transitive
     description:
