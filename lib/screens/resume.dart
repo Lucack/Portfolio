@@ -15,13 +15,13 @@ class ResumeSection extends StatelessWidget {
     if (kIsWeb) {
       // Web download
       final anchor = html.AnchorElement(
-          href: "assets/images/LucasSantana.b31ae6e47c416108289d.pdf")
+          href: "assets/images/Currículo.pdf")
         ..setAttribute("download", "LucasSantana.pdf")
         ..click();
     } else {
       // Mobile download (you may need to implement a proper file saving mechanism)
       final data = await rootBundle
-          .load("assets/images/LucasSantana.b31ae6e47c416108289d.pdf");
+          .load("assets/images/Currículo.pdf");
       final bytes = data.buffer.asUint8List();
       // Implement file saving for mobile here
     }
@@ -47,7 +47,7 @@ class ResumeSection extends StatelessWidget {
               child: Container(
                 height: isMobile? MediaQuery.of(context).size.width *1.5  : availableHeight + MediaQuery.of(context).size.width * 0.4, // Adjusted to leave space for the button
                 child: SfPdfViewer.asset(
-                  "assets/images/LucasSantana.b31ae6e47c416108289d.pdf",
+                  "assets/images/Currículo.pdf",
                   enableDoubleTapZooming: true,
                 ),
               ),

@@ -21,17 +21,22 @@ Widget buildInfoSection() {
           ['Ciência da Computação', 'Universidade Federal do ABC - UFABC'],
         ),
         _buildInfoItem(
-          iconStudentCap,
+          iconSearch,
           'Realizei pesquisas na área de Engenharia de Software com foco em Métodos Ágeis.',
           ['Engenharia de Software'],
         ),
         _buildInfoItem(
-          iconStudentCap,
-          'Desenvolvo alguns jogos multiplataformas com amigos.',
+          iconSoftware,
+          'Desenvolvo projetos pessoais com foco em ajudar e facilitar a vida das pessoas.',
+          ["projetos pessoais",'ajudar', "facilitar"],
+        ),
+        _buildInfoItem(
+          iconGame,
+          'Também desenvolvo alguns jogos multiplataformas com amigos.',
           ['jogos multiplataformas'],
         ),
         _buildInfoItem(
-          iconStudentCap,
+          iconWork,
           'Atualmente, enquanto continuo meus projetos pessoais e meus estudos, sou estagiário na área de Desenvolvimento Full Stack no Itaú Unibanco.',
           ['projetos pessoais', 'Itaú Unibanco'],
         ),
@@ -44,7 +49,7 @@ Widget _buildInfoItem(String emoji, String text, List<String> highlights) {
   return Padding(
     padding: const EdgeInsets.symmetric(vertical: 8.0),
     child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SvgPicture.string(
           emoji,
