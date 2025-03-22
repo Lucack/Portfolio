@@ -52,6 +52,8 @@ Widget _buildInfoItem(String emoji, String text, List<String> highlights) {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SvgPicture.string(
+          height: 50,
+          width: 50,
           emoji,
           colorFilter: const ColorFilter.mode(
             Colors.cyan,
@@ -63,7 +65,7 @@ Widget _buildInfoItem(String emoji, String text, List<String> highlights) {
           child: buildHighlightedText(
             text: text,
             highlights: highlights,
-            fontSize: 16,
+            fontSize: 18,
           ),
         ),
       ],

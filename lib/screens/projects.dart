@@ -65,10 +65,15 @@ class ProjectsSection extends StatelessWidget {
       {
         'title': 'UFABConecta',
         'category': 'App',
-        'description': 'Meu primeiro aplicativo oficial publicado. UFABConecta foi criado para reunir diversos serviços da UFABC (Universidade Federal do ABC) e ajudar a vida dos estudantes..',
-        'imagePath': 'assets/images/mobile.png',
+        'description':
+            'Meu primeiro aplicativo oficial publicado, com mais de 7 mil usuários! O UFABConecta foi criado para tornar a vida universitária na UFABC mais fácil e prática.',
+        'imagePath': 'assets/images/Conecta.png',
         'backgroundColor': Color(0xFF4CA89A),
-        'links': [Link('Play Store', 'https://play.google.com/store/apps/details?id=com.lucack.ufabconecta&hl=pt_BR', playStore)],
+        'links': [
+          Link(
+              'Play Store', 'https://play.google.com/store/apps/details?id=com.lucack.ufabconecta&hl=pt_BR', playStore),
+          Link('App Store', 'https://apps.apple.com/br/app/ufabconecta/id6742209223', ios)
+        ],
       },
       {
         'title': 'Cris\' Adventures',
